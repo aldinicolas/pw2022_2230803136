@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorium Terpadu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="col-1">
+    <div id="logo">
+      <img src="Labor.PNG" alt="logo"></img>
+    </div>
+
+    <nav id="articlepop">Articel Populer</nav>
+    <ul class="menu-list">
+      <li>Desain Web</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Lain - lain</li>
+    </ul>
+
+  </div>
+
+  <div class="col-2">
+    <header class="col-3">
+      <p class="title">GALERI LABORATORIUM</p>
+    </header>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="tentang.html">TENTANG</a></li>
+        <li><a href="galeri.html">GALERI</a></li>
+        <li><a href="kontak.html">KONTAK</a></li>
+        <li><a href="daftar.html">DAFTAR ISI</a></li>
+        <li><a href="bukutamu.html">BUKU TAMU</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <article class="article">
+        <div class="gallery">
+          <h2>Galeri</h2>
+          <div class="image">
+            <img src="megachan.jpeg" >
+          </div>
+          <div class="image">
+            <img src="megachan.jpeg" >
+          </div>
+          <div class="image">
+            <img src="megachan.jpeg" >
+
+            <div class="gallery2">  
+          </div>
+        </div>
+        <div class="gallery2">
+
+            <div class="image">
+              <img src="megasan.jpeg" >
+            </div>
+            <div class="image">
+              <img src="megasan.jpeg" >
+            </div>
+            <div class="image">
+              <img src="megasan.jpeg" >
+  
+            </div>
+        
+      </article>      
+    </main>
+  </div>
+  <footer>
+    <div class="footertext">
+      <p>&copy; Copyright 2023. All Rights Reserved<br>Fakultas Laboratorium Terpadu
+    </div>
+  </footer>
+  <script>
+    // Fungsi untuk menampilkan footer setelah scroll ke bawah sekali
+    function showFooterOnScroll() {
+      var footer = document.querySelector('footer');
+      var scrollPosition = window.scrollY || window.pageYOffset;
+  
+      if (scrollPosition > 1) { // Ubah nilai 1 sesuai dengan seberapa jauh pengguna harus scroll sebelum footer muncul
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+    }
+  
+    // Tambahkan event listener untuk memanggil fungsi saat scroll
+    window.addEventListener('scroll', showFooterOnScroll);
+  </script>
+</body>
+</html>

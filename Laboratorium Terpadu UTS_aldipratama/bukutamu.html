@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorium Terpadu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="col-1">
+    <div id="logo">
+      <img src="Labor.PNG" alt="logo"></img>
+    </div>
+
+    <nav id="articlepop">Articel Populer</nav>
+    <ul class="menu-list">
+      <li>Desain Web</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Lain - lain</li>
+    </ul>
+
+  </div>
+
+  <div class="col-2">
+    <header class="col-3">
+      <p class="title">Selamat datang </p>
+      <p class="subtitle">Daftar tamu Laboratorium Terpadu</p>
+    </header>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="tentang.html">TENTANG</a></li>
+        <li><a href="galeri.html">GALERI</a></li>
+        <li><a href="#kontak.html">KONTAK</a></li>
+        <li><a href="#daftar.html">DAFTAR ISI</a></li>
+        <li><a href="bukutamu.html">BUKU TAMU</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <article class="article">
+        <h2>Buku Tamu</h2>
+        <p>Silakan isi buku tamu dengan komentar, saran, atau pertanyaan Anda. Kami sangat menghargai masukan Anda.</p>
+        <form>
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </article>      
+    </main>
+  </div>
+  <footer>
+    <div class="footertext">
+      <p>&copy; Copyright 2023. All Rights Reserved<br>Fakultas Laboratorium Terpadu
+    </div>
+  </footer>
+  <script>
+    // Fungsi untuk menampilkan footer setelah scroll ke bawah sekali
+    function showFooterOnScroll() {
+      var footer = document.querySelector('footer');
+      var scrollPosition = window.scrollY || window.pageYOffset;
+  
+      if (scrollPosition > 1) { // Ubah nilai 1 sesuai dengan seberapa jauh pengguna harus scroll sebelum footer muncul
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+    }
+  
+    // Tambahkan event listener untuk memanggil fungsi saat scroll
+    window.addEventListener('scroll', showFooterOnScroll);
+  </script>
+</body>
+</html>
